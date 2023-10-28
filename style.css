@@ -28,7 +28,7 @@ html,body {
 body {
     background-color: #0D0D0D;
     background-image: url(img/WAVE\ GRID\ MAIN.svg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -74,10 +74,10 @@ nav #links button {
 
 #mainh1 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 58vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 #mainh1 #h1 h1 {
@@ -111,6 +111,7 @@ nav #links button {
 #originh1 img {
     height: 100%;
     object-fit: cover;
+    transform: scale(0.7);
 }
 #packets #originContainer {
     width: 100%;
@@ -179,6 +180,7 @@ nav #links button {
 #jodh1 img {
     height: 100%;
     object-fit: cover;
+    transform: scale(0.7);
 }
 #packets #jodContainer {
     width: 100%;
@@ -249,6 +251,7 @@ nav #links button {
 #whath1 img {
     height: 100%;
     object-fit: cover;
+    transform: scale(0.7);
 }
 #packets #whatContainer {
     width: 100%;
@@ -470,6 +473,11 @@ nav #links button {
     color: #fff;
 }
 
+#top-1,#bottom-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 /* btn effect */
@@ -814,4 +822,312 @@ nav #links button {
 .icons-container a:hover{
     transform: scale(1.5);
     transition: 0.2s ease;
+}
+
+@media ( max-width : 1200px ) {
+    #packets #originContainer,#packets #jodContainer,#packets #whatContainer {
+        height: 35rem;
+    }
+    #packets {
+        min-height: 200vh;
+    }
+    #cards {
+        width: 20rem;
+        height: 19rem;
+    }
+    #teamContainer {
+        height: 187vh;
+    }
+    #witbtn {
+        margin-bottom: -45vw;
+    }
+}
+
+@media ( max-width : 1000px ) {
+    #packets #originContainer,#packets #jodContainer,#packets #whatContainer {
+        height: 28rem;
+    }
+    #packets {
+        min-height: 100vh;
+    }
+    #cards {
+        width: 15rem;
+        height: 14rem;
+    }
+    #teamContainer {
+        height: 150vh;
+    }
+    #witbtn {
+        margin-bottom: -45vw;
+    }
+    #bottom img {
+        margin-bottom: 4.5rem;
+    }
+    .o1::after , .o2::after ,.o3::after ,.o4::after {
+        bottom: -5rem;
+    }
+}
+
+@media ( max-width:850px ) {
+    nav #logo img {
+        width: 50%;
+
+    }
+    #mainh1 #h1 h1 {
+        letter-spacing: 0;
+    }
+    #originContainer .mainImg,#jodContainer .mainImg , #whatContainer .mainImg {
+        display: none;
+    }
+
+    #packets #originContainer , #packets #jodContainer, #packets #whatContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #originContainer p , #jodContainer p ,#whatContainer p {
+        width: 70vw;
+        font-size: 3vw;
+    }
+    #packets #originContainer {
+        height: 35rem;
+    }
+    #packets #jodContainer,#packets #whatContainer {
+        height: 39rem;
+    }
+    #originh1 img,#jodh1 img,#whath1 img {
+        transform: scale(0.5);
+    }
+    #originContainer::before , #jodContainer::before,#whatContainer::before {
+        font-size: 3.8vw;
+    }
+    #jodh1,#whath1,#originh1 {
+        margin-bottom: 0rem;
+        align-items: flex-end;
+        margin-left: 1rem;
+        font-size: 10vw;
+    }
+    #jodh1 h1,#whath1 h1,#originh1 h1 {
+        margin-bottom: -3rem;
+    }
+    #teamContainer {
+        height: 110vh;
+      }
+      #originContainer::before, #jodContainer::before, #whatContainer::before {
+        font-size: 5vw;
+      }
+      #cards {
+        width: 10rem;
+        height: 9rem;
+      }
+      #bottom img {
+        margin-bottom: -7rem;
+      }
+      #teamContainer {
+        height: 90vh;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        bottom: -4.3rem;
+      }
+
+      /* footer part  */
+
+      .marquee-container{
+        height: 1.5rem;
+      }
+      .f-container{
+        height: 17rem;
+        background-color: black;
+        margin-top: 21rem;
+      }
+      .middel{
+        height: 9vh;
+      }
+      .footer-main img{
+        height: 70%;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+      }
+      .social, .social i {
+        font-size: 1.4vw;
+      }
+     
+}
+
+
+@media (max-width: 700px) {
+    #packets #originContainer {
+      height: 28rem;
+    }
+    #packets #jodContainer, #packets #whatContainer {
+        height: 33rem;
+      }
+      #mainh1 {
+        min-height: 40vh;
+
+      }
+      #jodh1,#whath1 {
+        margin-top: -3vw;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+      }
+}
+
+@media (max-width:550px) {
+    #packets #originContainer {
+        height: 20rem;
+      }
+      #packets #jodContainer, #packets #whatContainer {
+        height: 24rem;
+      }
+      #originh1 img, #jodh1 img, #whath1 img {
+        transform: scale(0.3);
+      }
+      #jodh1 h1, #whath1 h1, #originh1 h1 {
+        margin-bottom: -1.5rem;
+      }
+      #jodh1, #whath1, #originh1 {
+        margin-bottom: 0rem;
+        font-size: 8vw;
+      }
+      #originContainer::before, #jodContainer::before, #whatContainer::before {
+        font-size: 4vw;
+      }
+      #mainh1 {
+        min-height: 25vh;
+      }
+      #jodh1, #whath1 {
+        margin-top: -9vw;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+      }
+      .o1::after,.o2::after,.o3::after,.o4::after {
+        font-size: 3vw;
+      }
+      #cards {
+        width: 8rem;
+        height: 8rem;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        font-size: 2.5vw;
+      }
+
+      #bottom img {
+        margin-bottom: -6.2rem;
+      }
+      #teamContainer {
+        height: 82vh;
+      }
+      #witbtn {
+        margin-bottom: -64vw;
+      }
+
+
+      /* footer part  */
+
+      .f-container{
+        height: 13rem;
+      }
+      .footer-main img {
+        height: 56%;
+      }
+      .icons-container {
+        font-size: 2vw;
+      }
+      .tc-container {
+        font-size: 1.5vw;
+      }
+      .marquee-container {
+        gap: 5rem;
+      }
+}
+
+@media (max-width:400px) {
+    #packets #originContainer {
+        height: 14rem;
+      }
+      #packets #jodContainer, #packets #whatContainer {
+        height: 16rem;
+      }
+      #jodh1 h1, #whath1 h1, #originh1 h1 {
+        margin-bottom: -0.9rem;
+      }
+      #jodh1, #whath1, #originh1 {
+        font-size: 6.5vw;
+      }
+      #mainh1 {
+        min-height: 12vh;
+      }
+      #cards {
+        width: 6rem;
+        height: 6rem;
+      }
+      #teamh1 {
+        min-height: 0;
+      }
+      #cardContainer {
+        height: 69%;
+      }
+      #overlay {
+        border-radius: 8px;
+      }
+      .o1 {
+        border: 1.5px solid #FF5C00;
+      }
+      .o2 {
+        border: 1.5px solid #118AE2;
+      }
+      .o3 {
+        border: 1.5px solid #FF4ACC;
+      }
+      .o4 {
+        border: 1.5px solid #E21143;
+      }
+      #bottom img {
+        margin-bottom: -4.6rem;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        bottom: -2.3rem;
+      }
+      #overlay:hover{
+        top: -10px;
+        right: 10px;
+    }
+    #cardContainer {
+      height: 76%;
+    }
+    #teamContainer {
+      height: 59vh;
+    }
+    #witbtn {
+      margin-bottom: -98vw;
+    }
+
+    /* footer part  */
+
+    .marquee-container h3 {
+      font-size: 2vw;
+    }
+    .marquee-container {
+      gap: 3rem;
+    }
+    .middel {
+      height: 7vh;
+    }
+    .f-container {
+      height: 9rem;
+    }
+    .marquee-container {
+      height: 1rem;
+    }
+    .footer-main img {
+      height: 44%;
+    }
+    .radio-wrapper {
+      height: 34px;
+      width: 125px;
+    }
 }
