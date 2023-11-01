@@ -21,17 +21,14 @@
     box-sizing: border-box;
 }
 
-html,body {
-    width:100%;
-    height: 100%;
-}
 body {
     background-color: #0D0D0D;
     background-image: url(img/WAVE\ GRID\ MAIN.svg);
     background-repeat: repeat;
     background-size: cover;
     overflow-x: hidden;
-
+    width: 100vw;
+    min-height: 100vh;
 }
 
 /* NAVBAR SECTION  */
@@ -892,7 +889,7 @@ nav #links button {
     }
     #originContainer p , #jodContainer p ,#whatContainer p {
         width: 70vw;
-        font-size: 3vw;
+        font-size: 3.7vw;
     }
     #packets #originContainer {
         height: 35rem;
@@ -1033,8 +1030,12 @@ nav #links button {
         height: 82vh;
       }
       #witbtn {
-        margin-bottom: -64vw;
+        margin-bottom: -63vw;
       }
+      #originContainer p , #jodContainer p ,#whatContainer p {
+        width: 70vw;
+        font-size: 3vw;
+    }
 
 
       /* footer part  */
@@ -1054,6 +1055,11 @@ nav #links button {
       .marquee-container {
         gap: 5rem;
       }
+}
+@media(max-width:500px) {
+  #witbtn {
+    margin-bottom: -76vw;
+  }
 }
 
 @media (max-width:400px) {
@@ -1222,6 +1228,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 9999;
+    display: none;
   }
   .active .toggle-btn {
     position: absolute;
@@ -1262,6 +1269,7 @@ nav {
   .active #navbar {
     transform: translate(0%);
     opacity: 1;
+    display: inline-block;
   }
   nav{
     padding: 1.5vw 3.5vw;
@@ -1272,4 +1280,16 @@ nav {
 #links a:hover {
   color: #16FF11;
   transition: 0.2s ease;
+}
+
+@media(max-width:600px) {
+  .marquee-container h3 {
+    font-weight: 400;
+  }
+  .marquee-container {
+    gap: 1.5rem;
+  }
+  .tc-container {
+    font-size: 2vw;
+  }
 }

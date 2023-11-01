@@ -27,15 +27,14 @@
     box-sizing: border-box;
 }
 
-html,body {
-    width:100%;
-}
 body {
     background-color: #0D0D0D;
     background-image: url(img/grid\ fade.svg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 /* navbar section   */
@@ -132,6 +131,7 @@ main {
     text-align: center;
     line-height: 88.352%; 
     letter-spacing: -4.48px;
+    width: 100vw;
 }
 #leftContainer p {
     font-family: ox;
@@ -309,8 +309,8 @@ main {
         margin-top: 54vw;
       }
       .swiper {
-        width: 279px;
-        height: 352px;
+        width: 301px;
+        height: 379px;
       }
       #rightContainer {
         margin-top: -28vw;
@@ -319,12 +319,12 @@ main {
 
 @media(max-width:380px) {
   #rightContainer {
-    margin-top: -48vw;
+    margin-top: -26vw;
   }
-      .swiper {
-        width: 227px;
-        height: 284px;
-      }
+  .swiper {
+    width: 265px;
+    height: 332px;
+  }
 }
 
 
@@ -548,4 +548,34 @@ nav {
 #links a:hover {
   color: #16FF11;
   transition: 0.2s ease;
+}
+@media(max-width:950px) {
+  #leftContainer h1 {
+    font-size: 7vw;
+  }
+  main {
+    gap: 5vh;
+  }
+}
+@media(max-width:400px) {
+  #leftContainer h1 {
+    font-size: 8.5vw;
+  }
+  main {
+    gap: 0vh;
+  }
+}
+
+
+
+@media(max-width:600px) {
+  .marquee-container h3 {
+    font-weight: 400;
+  }
+  .marquee-container {
+    gap: 1.5rem;
+  }
+  .tc-container {
+    font-size: 2vw;
+  }
 }
