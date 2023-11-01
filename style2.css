@@ -230,7 +230,7 @@ nav #links button {
 /* what container part  */
 
 #whath1 {
-    font-family: 'Luckiest Guy';
+    font-family:Guy;
     display: flex;
     justify-content: space-around;
     margin-bottom: -4.5vw;
@@ -489,6 +489,9 @@ nav #links button {
 .container-btn {
     display: flex;
     flex-direction: row;
+  }
+  .btn {
+    font-family: Ubuntu;
   }
   
   .radio-wrapper {
@@ -1058,7 +1061,7 @@ nav #links button {
         height: 16rem;
       }
       #jodh1 h1, #whath1 h1, #originh1 h1 {
-        margin-bottom: -0.9rem;
+        margin-bottom: -1.1rem;
       }
       #jodh1, #whath1, #originh1 {
         font-size: 6.5vw;
@@ -1256,6 +1259,9 @@ nav {
   .active #navbar {
     transform: translate(0%);
     opacity: 1;
+  }
+  nav{
+    padding: 1.5vw 3.5vw;
   }
   
 }
