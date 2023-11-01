@@ -1,3 +1,10 @@
+const mobileNav = document.querySelector('.toggle-btn');
+const navHeader = document.querySelector('nav');
+
+mobileNav.addEventListener("click", () => toggleNavbar());
+
+
+
 const toggleNavbar = () => {
     navHeader.classList.toggle("active");
   };

@@ -931,6 +931,9 @@ nav #links button {
       .o1::after, .o2::after, .o3::after, .o4::after {
         bottom: -4.3rem;
       }
+      #teamh1 h1 {
+        letter-spacing: 0;
+      }
 
       /* footer part  */
 
@@ -1132,4 +1135,132 @@ nav #links button {
       height: 34px;
       width: 125px;
     }
+}
+
+
+
+
+/* logo part   */
+
+
+@media (max-width:700px) {
+  #logo {
+    width: 85%;
+  }
+}
+
+@media (max-width:500px) {
+  #logo {
+    width: 62%;
+  }
+}
+
+/* responsive navbar  */
+
+nav #links a[name=mblbtn] {
+  display: none;
+}
+nav {
+  position: relative;
+}
+
+.toggle-btn {
+  display: none;
+  color: #3DFF2A;
+  font-size: 5vw;
+  cursor: pointer;
+}
+.stars {
+  display: none;
+}
+
+@media(max-width:950px) {
+  .toggle-btn {
+    display: block;
+  }
+  nav #links a[name=mblbtn] {
+    display: block;
+  }
+  nav #links a[name=pcbtn] {
+    display: none;
+  }
+  .toggle-btn i[name=bars] {
+    display: block;
+  }
+  .toggle-btn i[name=close] {
+    display: none;
+  }
+  .active .toggle-btn i[name=bars] {
+    display: none;
+  }
+  .active .toggle-btn i[name=close] {
+    display: block;
+  }
+  .active .toggle-btn i[name=close]:hover{
+    transform: rotate(-35deg);
+    transition: 0.3s ease;
+    opacity: 0.5;
+  }
+  nav #links a {
+    font-size: 1rem;
+  }
+
+  #navbar {
+    width: 100vw;
+    height: 100vh;
+    background-color: #323232;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .active .toggle-btn {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 9999999;
+  }
+  nav #links {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 5rem;
+  }
+  .stars {
+    display: inline-block;
+    width: 8vw;
+    position: absolute;
+  }
+  #topstar {
+    top: 30%;
+    right: 8%;
+  }
+  #bstar {
+    bottom: 35%;
+    left: 10%;
+  }
+  .active #logo {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999999;
+    transition: 0.2s ease;
+    width: 50%;
+  }
+  .active #navbar {
+    transform: translate(0%);
+    opacity: 1;
+  }
+  
+}
+
+#links a:hover {
+  color: #16FF11;
+  transition: 0.2s ease;
 }

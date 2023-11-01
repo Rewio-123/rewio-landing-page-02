@@ -15,16 +15,29 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <img src="img/logo.svg" alt="">
-        </div>
+    <nav class="">
+       
+        <a href="index.html"><img id="logo" src="img/logo.svg" alt=""></a>
+    <div id="navbar">
         <div id="links">
-            <a href="index-2.html">ABOUT US</a>
-            <a href="#">CONTACT US</a>
-            <a href="#"><button>COMMUNITY</button></a>
+            <a href="index-2.html" name="mblour" class="contact">ABOUT US</a>
+            <a href="index-2.html" class="contact">ABOUT US</a>
+            <a href="https://wa.me/919663775197" class="contact">CONTACT US</a>
+            <a href="https://discord.gg/WRzfvumaFy" class="community" name="mblbtn">COMMUNITY</a>
+            <a href="https://discord.gg/WRzfvumaFy" name="pcbtn"><button>COMMUNITY</button></a>
         </div>
-    </nav>
+        
+        <img class="stars" id="topstar" src="img/nav startop.svg" alt="">
+        <img class="stars" id="bstar" src="img/nav starbottom.svg" alt="">
+
+    </div>
+
+
+    <div class="toggle-btn">
+        <i class="fa-solid fa-bars" name="bars"></i>
+        <i class="fa-solid fa-xmark" name="close"></i>
+    </div>
+</nav>
     <main>
         <div id="leftContainer">
             <h1>PLAY BEYOND<BR>LIMITS</h1>
@@ -92,6 +105,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script src="script.js"></script>
 
 </body>
 </html>
