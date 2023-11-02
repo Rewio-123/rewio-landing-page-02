@@ -33,8 +33,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
 }
 
 /* navbar section   */
@@ -88,9 +88,9 @@ main {
 /* swiper section  */
 
 .swiper {
-    width: 537px;
-    height: 603px;
-  }
+  width: 537px;
+  height: 639px;
+}
 
   .swiper-slide {
     display: flex;
@@ -368,7 +368,7 @@ main {
         height: 56%;
       }
       .icons-container {
-        font-size: 2vw;
+        font-size: 3vw;
       }
       .tc-container {
         font-size: 1.5vw;
@@ -578,4 +578,41 @@ nav {
   .tc-container {
     font-size: 2vw;
   }
+}
+
+#links a[name=our]::before{
+  content: "";
+  background-image: url('img/oursvg--.svg');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
+}
+#links a[name=contact]::before{
+  content: "";
+  background-image: url('img/contactnew.svg');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
+}
+#links a[name=mblbtn]::before{
+  content: "";
+  background-image: url('img/join.png');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
 }
