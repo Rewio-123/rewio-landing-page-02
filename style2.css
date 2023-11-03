@@ -1004,10 +1004,10 @@ nav #links button {
         font-size: 8vw;
       }
       #originContainer::before, #jodContainer::before, #whatContainer::before {
-        font-size: 4vw;
+        font-size: 5vw;
       }
       #mainh1 {
-        min-height: 25vh;
+        min-height: 7vh;
       }
       #jodh1, #whath1 {
         margin-top: -9vw;
@@ -1125,6 +1125,12 @@ nav #links button {
     #witbtn {
       margin-bottom: -98vw;
     }
+    #packets {
+      margin-top: -4vh;
+    }
+    main {
+      margin-top: -4vh;
+    }
 
     /* footer part  */
 
@@ -1153,7 +1159,11 @@ nav #links button {
 }
 
 
-
+@media(max-width:350px) {
+  #jodh1 h1, #whath1 h1, #originh1 h1 {
+    margin-bottom: -1rem;
+  }
+}
 
 /* logo part   */
 

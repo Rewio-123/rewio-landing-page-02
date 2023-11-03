@@ -264,13 +264,14 @@ main {
 @media (max-width:1100px) {
     main {
         flex-direction: column;
-        margin-top: 28vw;
+        margin-top: 15vw;
+        gap: 5rem;
     }
     #rightContainer {
-        margin-top: 5vw;
+        height: 50%;
     }
     #leftContainer {
-        height: 0;
+        height: 50%;
     }
     #leftContainer p {
         width: 60vw;
@@ -287,9 +288,9 @@ main {
       #leftContainer p {
         font-size: 2vw;
       }
-      #rightContainer {
+      /* #rightContainer {
         margin-top: -10vw;
-      }
+      } */
 }
 @media(max-width:500px) {
     #leftContainer p {
@@ -298,9 +299,9 @@ main {
       #leftContainer p {
         width: 75vw;
       }
-      #rightContainer {
-        margin-top: -17vw;
-      }
+      /* #rightContainer {
+        margin-top: -35vw;
+      } */
       .swiper {
         width: 308px;
         height: 382px;
@@ -309,21 +310,16 @@ main {
 @media(max-width:450px) {
     main {
         flex-direction: column;
-        margin-top: 54vw;
+        /* margin-top: 54vw; */
       }
       .swiper {
         width: 301px;
         height: 379px;
       }
-      #rightContainer {
-        margin-top: -28vw;
-      }
 }
 
 @media(max-width:380px) {
-  #rightContainer {
-    margin-top: -26vw;
-  }
+
   .swiper {
     width: 265px;
     height: 332px;
@@ -544,13 +540,13 @@ nav {
 
 @media(max-width:850px) {
   .f-container {
-    margin-top: -4rem;
+    margin-top: 4rem;
   }
 }
 @media(max-width:550px) {
-  .f-container {
+  /* .f-container {
     margin-top: -8rem;
-  }
+  } */
 }
 #links a:hover {
   color: #16FF11;
@@ -568,16 +564,13 @@ nav {
   #leftContainer h1 {
     font-size: 8.5vw;
   }
-  main {
-    gap: 0vh;
-  }
 }
 
 
 
 @media(max-width:600px) {
   .marquee-container h3 {
-    font-weight: 400;
+    font-weight: 600;
   }
   .marquee-container {
     gap: 1.5rem;
