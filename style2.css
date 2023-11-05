@@ -25,10 +25,9 @@ body {
     background-color: #0D0D0D;
     background-image: url(img/WAVE\ GRID\ MAIN.svg);
     background-repeat: repeat;
-    background-size: contain;
+    background-size: auto;
     overflow-x: hidden;
     height: 100%;
-    background-position: center;
 }
 html {
   overflow-x: hidden;
@@ -126,9 +125,9 @@ nav #links button {
     overflow: hidden;
 }
 #originContainer p {
-    width: 35vw;
+    width: 50vw;
     font-family:Guy;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: white;
     margin-left: 5%;
     
@@ -195,9 +194,9 @@ nav #links button {
     overflow: hidden;
 }
 #jodContainer p {
-    width: 45vw;
+    width: 70vw;
     font-family:Guy;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: white;
     margin-left: 5%;
     
@@ -267,9 +266,9 @@ nav #links button {
     overflow: hidden;
 }
 #whatContainer p {
-    width: 45vw;
+    width: 70vw;
     font-family:Guy;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: white;
     margin-left: 5%;
     
@@ -1038,7 +1037,7 @@ nav #links button {
       }
       #originContainer p , #jodContainer p ,#whatContainer p {
         width: 70vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
 
@@ -1051,7 +1050,7 @@ nav #links button {
         height: 56%;
       }
       .icons-container {
-        font-size: 2vw;
+        font-size: 3vw;
       }
       .tc-container {
         font-size: 1.5vw;
@@ -1326,7 +1325,7 @@ nav {
 }
 #links a[name=contact]::before{
   content: "";
-  background-image: url('img/contactnew.svg');
+  background-image: url('img/tri.svg');
     width: 1.1rem;
     height: 1.1rem;
     z-index: 9999999;
