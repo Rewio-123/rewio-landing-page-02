@@ -1372,3 +1372,7 @@ nav {
   }
   
 }
+
+nav #links a button {
+  font-weight: 600;
+}
