@@ -25,7 +25,7 @@ body {
     background-color: #0D0D0D;
     background-image: url(img/WAVE\ GRID\ MAIN.svg);
     background-repeat: repeat;
-    background-size: auto;
+    background-size: contain;
     overflow-x: hidden;
     height: 100%;
     background-position: center;
@@ -212,7 +212,8 @@ nav #links button {
     font-family: Guy;
     font-size: 2.8vw;
     color: #FFF;
-    left: 19vw;
+    /* left: 19vw; */
+    left: 22vw;
     top: 0;
     position: absolute;
 }
@@ -816,7 +817,7 @@ nav #links button {
     justify-content: space-between;
     align-items: center;
     font-family: Ubuntu;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: #16FF11;
     padding: 0 10vw;
     margin-left: -1rem;
@@ -844,7 +845,7 @@ nav #links button {
         height: 187vh;
     }
     #witbtn {
-        margin-bottom: -45vw;
+      margin-bottom: -48vw;
     }
 }
 
@@ -1288,7 +1289,7 @@ nav {
     pointer-events: auto;
   }
   nav{
-    padding: 1.5vw 3.5vw;
+    padding: 2vw 3.5vw;
   }
   
 }
@@ -1300,7 +1301,7 @@ nav {
 
 @media(max-width:600px) {
   .marquee-container h3 {
-    font-weight: 400;
+    font-weight: 600;
   }
   .marquee-container {
     gap: 1.5rem;
@@ -1347,4 +1348,27 @@ nav {
     left: -1.5rem;
     background-repeat: no-repeat;
 
+}
+
+@media (max-width: 470px) {
+  #witbtn {
+    margin-bottom: -81vw;
+  }
+}
+@media (max-width: 375px) {
+  #witbtn {
+    margin-bottom: -101vw;
+  }
+}
+@media (max-width: 340px) {
+  #witbtn {
+    margin-bottom: -113vw;
+  }
+}
+
+@media(max-width:400px){
+  #originContainer::before{
+    left: 15vw;
+  }
+  
 }

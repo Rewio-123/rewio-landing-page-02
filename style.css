@@ -239,7 +239,7 @@ main {
     justify-content: space-between;
     align-items: center;
     font-family: ubuntu;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: #16FF11;
     padding: 0 10vw;
     margin-left: -1rem;
@@ -294,7 +294,7 @@ main {
 }
 @media(max-width:500px) {
     #leftContainer p {
-        font-size: 2.3vw;
+        font-size: 2.5vw;
       }
       #leftContainer p {
         width: 75vw;
@@ -529,7 +529,7 @@ nav {
     pointer-events: auto;
   }
   nav{
-    padding: 1.5vw 3.5vw;
+    padding: 2vw 3.5vw;
   }
  
 }
@@ -558,6 +558,7 @@ nav {
   }
   main {
     gap: 5vh;
+    margin-top: 7rem;
   }
 }
 @media(max-width:400px) {
@@ -594,7 +595,7 @@ nav {
 }
 #links a[name=contact]::before{
   content: "";
-  background-image: url('img/contactnew.svg');
+  background-image: url('img/newcontact.svg');
     width: 1.1rem;
     height: 1.1rem;
     z-index: 9999999;
@@ -615,4 +616,9 @@ nav {
     left: -1.5rem;
     background-repeat: no-repeat;
 
+}
+
+
+nav #links a button {
+  font-weight: 500;
 }
