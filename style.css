@@ -272,6 +272,7 @@ main {
     }
     #leftContainer {
         height: 50%;
+        gap: 2vw;
     }
     #leftContainer p {
         width: 60vw;
@@ -620,5 +621,5 @@ nav {
 
 
 nav #links a button {
-  font-weight: 600;
+  font-weight: 500;
 }

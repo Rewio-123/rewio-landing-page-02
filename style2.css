@@ -1037,7 +1037,7 @@ nav #links button {
       }
       #originContainer p , #jodContainer p ,#whatContainer p {
         width: 70vw;
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
 
@@ -1373,5 +1373,9 @@ nav {
 }
 
 nav #links a button {
-  font-weight: 600;
+  font-weight: 500;
 }
+
+/* nav {
+  background: rgba(0, 0, 0, 0.82);
+} */
