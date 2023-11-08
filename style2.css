@@ -1338,7 +1338,7 @@ nav {
 
 #links a[name=mblbtn]::before{
   content: "";
-  background-image: url('img/join.png');
+  background-image: url('img/join----.svg');
     width: 1.1rem;
     height: 1.1rem;
     z-index: 9999999;
