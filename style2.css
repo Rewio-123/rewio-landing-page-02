@@ -443,6 +443,7 @@ nav #links button {
     bottom: -8rem;
     text-align: center;
     color: #fff;
+    width: 80%;
 }
 .o2::after{
     content: "Co-founder and Chief Fixer";
@@ -470,7 +471,7 @@ nav #links button {
     font-size: 2vw;
     position: absolute;
     bottom: -8rem;
-    width: 80%;
+    width: 59%;
     text-align: center;
     color: #fff;
 }
@@ -479,6 +480,14 @@ nav #links button {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+@media(max-width:850px) {
+  .o4::after {
+    width: 80%;
+  }  
+  .o1::after {
+    width: 80%;
+  }
 }
 
 
@@ -1036,8 +1045,8 @@ nav #links button {
         margin-bottom: -63vw;
       }
       #originContainer p , #jodContainer p ,#whatContainer p {
-        width: 70vw;
-        font-size: 3vw;
+        width: 89vw;
+        font-size: 3.4vw;
     }
 
 

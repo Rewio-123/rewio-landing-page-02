@@ -295,7 +295,7 @@ main {
 }
 @media(max-width:500px) {
     #leftContainer p {
-        font-size: 3vw;
+        font-size: 2.5vw;
       }
       #leftContainer p {
         width: 75vw;
