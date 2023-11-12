@@ -328,7 +328,7 @@ nav #links button {
 #cardContainer {
     width: 80%;
     height: 100%;
-    margin-top: 10%;
+    margin-top: -5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -480,6 +480,7 @@ nav #links button {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 @media(max-width:850px) {
   .o4::after {
@@ -967,7 +968,7 @@ nav #links button {
         letter-spacing: 0.7px;
       }
       .social, .social i {
-        font-size: 2vw;
+        font-size: 2.5vw;
       }
      
 }
@@ -1091,8 +1092,8 @@ nav #links button {
         min-height: 12vh;
       }
       #cards {
-        width: 6rem;
-        height: 6rem;
+        width: 7.5rem;
+        height: 7.5rem;
       }
       #teamh1 {
         min-height: 0;
@@ -1116,7 +1117,7 @@ nav #links button {
         border: 1.5px solid #E21143;
       }
       #bottom img {
-        margin-bottom: -4.6rem;
+        margin-bottom: -6rem;
       }
       .o1::after, .o2::after, .o3::after, .o4::after {
         bottom: -2.3rem;
