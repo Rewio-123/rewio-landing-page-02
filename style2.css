@@ -1142,6 +1142,9 @@ nav #links button {
     main {
       margin-top: -4vh;
     }
+    #cardContainer {
+      margin-top: -5%;
+    }
 
     /* footer part  */
 
