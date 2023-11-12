@@ -1388,3 +1388,16 @@ nav #links a button {
 /* nav {
   background: rgba(0, 0, 0, 0.82);
 } */
+
+@media ( max-width:430px ) {
+  #witbtn {
+    margin-bottom: -90vw;
+  }
+
+}
+@media ( max-width:380px ) {
+  #witbtn {
+    margin-bottom: -102vw;
+  }
+
+}
