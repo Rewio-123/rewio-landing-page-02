@@ -1024,20 +1024,21 @@ nav #links button {
       }
       .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
         letter-spacing: 0.7px;
+        font-size: 0.65rem;
       }
       .o1::after,.o2::after,.o3::after,.o4::after {
         font-size: 3vw;
       }
       #cards {
-        width: 8rem;
-        height: 8rem;
+        width: 9rem;
+        height: 9rem;
       }
       .o1::after, .o2::after, .o3::after, .o4::after {
         font-size: 2.5vw;
       }
 
       #bottom img {
-        margin-bottom: -6.2rem;
+        margin-bottom: -7.1rem;
       }
       #teamContainer {
         height: 82vh;
