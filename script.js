@@ -14,3 +14,7 @@ const toggleNavbar = () => {
   witnessBtn.addEventListener("click" , () => {
     window.open('wintess.html' , '_blank');
   })
+
+
+
+  
