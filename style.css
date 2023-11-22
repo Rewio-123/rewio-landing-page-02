@@ -476,7 +476,7 @@ nav {
   #navbar {
     width: 100vw;
     height: 100vh;
-    background-color: #323232;
+    background-color: black;
     transform: translateX(100%);
     transition: 0.3s ease;
     opacity: 0;
