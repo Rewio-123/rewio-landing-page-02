@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Table</title>
+    <script>
+        
+let sheetID = "1xw6Ys86lywnOErf655WfBfPPF8X0lMLAx-G2i5zKRUQ";
+let sheetTitle ="Rewio Points Table";
+let sheetRange ="A2:F100";
+let sheetUrl = ('https://docs.google.com/spreadsheets/d/' + sheetID + '/gviz/tq?sheet=' + sheetTitle + '&range=' + sheetRange);
+let positionNumber = 1;
+
+fetch(sheetUrl)
+  .then(res => res.text())
+  .then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
+    assignValues(data);
+  })
+  .catch(err => {
+    console.error("Fetch Error:", err);
+  });
+
+  function assignValues(data, table) {
+    const rowObj = data.table.rows;
+    for (const rows of rowObj) {
+      createRows(rows);
+    }
+  }
+
+  function createRows(rows) {
+    const tableBody = document.getElementById("points-table");
+    const row = document.createElement("tr");
+    const slNo = document.createElement("td");
+    slNo.textContent = positionNumber;
+    row.appendChild(slNo);
+    for (const value of rows.c) {
+      createData(value, row);
+    }
+    positionNumber++;
+    tableBody.appendChild(row);
+  }
+
+  function createData(value, row) {
+    const cell = document.createElement("td");
+    cell.textContent = value.v;
+    if(typeof value.v !== "string") {
+        cell.classList.add("center-align")
+    }
+    row.appendChild(cell);
+  }
+    </script>
+    <style>
+        @font-face {
+    font-family:Hanson ;
+    src: url(./fonts/Hanson-Bold.ttf);
+}
+@font-face {
+    font-family:"Clash Display" ;
+    src: url(./fonts/ClashDisplay-Variable.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.bg{
+    background: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 17px 0 17px 0;
+    min-height: 100vh;
+
+}
+.overlay1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #17FF13;
+    mix-blend-mode: darken;
+}
+.overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.77);
+    top: 0;
+    left: 0;
+}
+h1{
+    font-family: Hanson;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(183deg, #16FF11 65.9%, #066104 113.54%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    z-index: 999;
+}
+
+h3 {
+    color: #FFF;
+    font-family: "Clash Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    z-index: 99;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    border: 2px solid #16FF12;
+    margin: 25px 0;
+    color: #000;
+    font-family: "Clash Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    padding: 8px;
+    z-index: 999;
+}
+table th {
+    background-color: #16FF12;
+
+}
+thead tr {
+    text-align: left;
+}
+table,th,td {
+    padding: 1rem;
+}
+tbody td {
+    color: #FFF;
+}
+.center-align{
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top : 1%;
+    left:0%;
+}
+    </style>
+</head>
+<body>
+    <!-- <img src="image/bg.png" alt=""> -->
+    <div class="bg">
+        <img src="./img/radiant trophy emblem.png" alt="" class="logo">
+        <h1>RANKINGS</h1>
+        <h3>ROAD TO RADIANT TROPHY</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>TEAMS</th>
+                    <th>MATCHES</th>
+                    <th><img src="img/chicken dinner.svg" alt=""></th>
+                    <th>PLACE &nbsp; PTS.</th>
+                    <th>KILLS</th>
+                    <th>TOTAL &nbsp; PTS.</th>
+                </tr>
+            </thead>
+            <tbody id="points-table">
+            </tbody>
+        </table>
+    
+    </div>
+</body>
+</html>
