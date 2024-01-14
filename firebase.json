@@ -16,7 +16,7 @@
         "destination": "/about.html"
       },
       {
-        "source": "/leaderbaord",
+        "source": "/leaderboard",
         "destination": "/points-table.html"
       }
     ],
